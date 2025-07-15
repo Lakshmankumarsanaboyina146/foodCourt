@@ -9,7 +9,7 @@ import Orders from "./pages/Orders/Orders.jsx";
 import { ToastContainer } from "react-toastify";
 
 const App = () => {
-  const url = "https://foodcourt-gq9q.onrender.com/";
+  const url = "https://foodcourt-gq9q.onrender.com";
 
 
   return (
