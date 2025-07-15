@@ -5,7 +5,8 @@ import { StoreContext } from "./store-context.js";
 
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
-  const url = "http://localhost:4000";
+ // const url = "http://localhost:4000";
+  const url = "https://foodcourt-gq9q.onrender.com/"
 
   const [token, setToken] = useState("");
   const [food_list, setFoodList] = useState([]);
