@@ -1,0 +1,126 @@
+/* Orders.css */
+
+.order {
+    padding: 20px 30px;
+    margin: 20px 0;
+}
+
+.order h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.order-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.order-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.order-item > div {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.order-food-item {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.order-item-name {
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.order-item-phone {
+    font-weight: 500;
+    color: #555;
+    min-width: 120px;
+}
+
+.order-item select {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.order-item select:hover {
+    border-color: #ff4d4d;
+}
+
+.order-item select:focus {
+    border-color: #ff4d4d;
+    box-shadow: 0 0 0 2px rgba(255, 77, 77, 0.2);
+}
+
+/* Status color indicators */
+.order-item select option[value="Food processing"] {
+    color: #ff9800;
+}
+
+.order-item select option[value="Out for delivery"] {
+    color: #2196f3;
+}
+
+.order-item select option[value="Delivered"] {
+    color: #4caf50;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+    .order-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .order-item > div {
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    .order-item-phone {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .order {
+        padding: 20px 15px;
+    }
+
+    .order h3 {
+        font-size: 24px;
+    }
+}
