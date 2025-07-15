@@ -5,12 +5,8 @@ import { StoreContext } from "./store-context.js";
 
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
-<<<<<<< HEAD
   const url = "http://localhost:4000";
 
-=======
-  const url = "https://fooddelivery-fbe1.onrender.com";
->>>>>>> 573d9762f51b75e463188ee1d2b7b27d3f96bb23
   const [token, setToken] = useState("");
   const [food_list, setFoodList] = useState([]);
 
